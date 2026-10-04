@@ -29,12 +29,10 @@ output/
 **/input/
 **/output/
 
-# Images are ignored except shared assets
+# Images (thumbnails, stills, client assets)
 *.png
 *.jpg
 *.jpeg
-!motion-graphics/assets/*.png
-!motion-graphics/assets/*.jpg
 
 # Python / OS junk
 __pycache__/

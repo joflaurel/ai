@@ -61,12 +61,12 @@ if (Test-Path (Join-Path $Workspace ".git")) {
     Write-Host "Git isn't available yet. Close PowerShell, open a new window and run this again." -ForegroundColor Yellow
 }
 
-# 4. Python packages for the pipeline and motion graphics
+# 4. Python packages for the video pipeline
 $py = if (Have "py") { "py" } elseif (Have "python") { "python" } else { $null }
 if ($py) {
-    Say "Installing Python packages (Whisper captions, image tools)..."
+    Say "Installing Whisper (captions)..."
     & $py -m pip install --upgrade --quiet pip
-    & $py -m pip install --upgrade --quiet faster-whisper pillow numpy
+    & $py -m pip install --upgrade --quiet faster-whisper
 } else {
     Write-Host "Python isn't available yet. Close PowerShell, open a new window and run this again." -ForegroundColor Yellow
 }

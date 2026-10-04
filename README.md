@@ -26,7 +26,6 @@ No install allowed (school, office, internet cafe)? Use https://claude.ai/code i
 | Folder | What it does |
 |---|---|
 | `video-pipeline/` | Drop videos in `input/` -> silence-cut video, Premiere EDL, SRT captions, transcript, 9:16 version |
-| `motion-graphics/` | Code-made motion graphics: logo/shape reveal (`logo_reveal.py`) and star draw-on (`star_draw.py`) |
 | `clients/` | Editing rules per client (template inside; keep private details out of this public repo) |
 | `.claude/skills/` | Skills Claude Code loads automatically in this folder |
 | `setup/` | `bootstrap.ps1` for new machines |
@@ -34,9 +33,7 @@ No install allowed (school, office, internet cafe)? Use https://claude.ai/code i
 ## Quick commands
 
 ```powershell
-py video-pipeline\pipeline.py                                           # process everything in video-pipeline\input
-py motion-graphics\logo_reveal.py --image my_logo.png --text "BRAND"    # logo reveal
-py motion-graphics\logo_reveal.py --vertical                            # 9:16 version
+py video-pipeline\pipeline.py      # process everything in video-pipeline\input
 ```
 
 Or just tell Claude Code what you want, e.g. *"caption and cut the silences in the clips in input"*.
