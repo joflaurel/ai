@@ -1,0 +1,48 @@
+# Media - never commit footage, renders or audio
+*.mp4
+*.mov
+*.mkv
+*.m4v
+*.avi
+*.webm
+*.mxf
+*.braw
+*.r3d
+*.wav
+*.mp3
+*.m4a
+*.aac
+*.flac
+*.srt
+*.edl
+
+# Editing project files (client work)
+*.prproj
+*.aep
+*.drp
+Adobe Premiere Pro Auto-Save/
+CapCut Drafts/
+
+# Working folders
+input/
+output/
+**/input/
+**/output/
+
+# Images (thumbnails, stills, client assets)
+*.png
+*.jpg
+*.jpeg
+
+# Python / OS junk
+__pycache__/
+*.pyc
+.venv/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Private notes (keep these on your PC or in Google Drive)
+clients/private/
+*.private.md
+.env
